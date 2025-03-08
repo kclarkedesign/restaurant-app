@@ -4,27 +4,29 @@ import React from "react";
 const Header = () => {
   return (
     <header className="header">
-      <div className="container">
+      <div className="header__container">
         {/* <h1 className="logo">Little Lemon</h1> */}
-        <img src="../img/Logo.svg" alt="" />
-        <nav>
-          <ul className="nav-list">
-            <li className="nav-item">
+        <a className="header__link" href="#home">
+          <img className="header__logo" src="/Logo.svg" alt="" />
+        </a>
+        <nav className="header__nav">
+          <ul className="nav__list">
+            <li className="nav__list-item">
               <a href="#home">Home</a>
             </li>
-            <li className="nav-item">
+            <li className="nav__list-item">
               <a href="#about">About</a>
             </li>
-            <li className="nav-item">
+            <li className="nav__list-item">
               <a href="#menu">Menu</a>
             </li>
-            <li className="nav-item">
-              <a href="#reservation">Reservation</a>
+            <li className="nav__list-item">
+              <a href="#reservations">Reservations</a>
             </li>
-            <li className="nav-item">
-              <a href="#order">Order</a>
+            <li className="nav__list-item">
+              <a href="#order">Order Online</a>
             </li>
-            <li className="nav-item">
+            <li className="nav__list-item">
               <a href="#login">Login</a>
             </li>
           </ul>
