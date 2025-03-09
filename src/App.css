@@ -17,6 +17,14 @@
   background-color: var(--primary-color-two);
 }
 
+.bg--secondary-light {
+  background-color: var(--secondary-color-three);
+}
+
+.bg--secondary-dark {
+  background-color: var(--secondary-color-two);
+}
+
 .display-title {
   font-family: "Markazi Text", serif;
   font-weight: 500;
@@ -79,7 +87,6 @@ h6 {
 }
 
 p {
-  color: #495e57;
   font-size: 16px;
   margin: 1em 0 1em;
 }
@@ -256,6 +263,10 @@ img {
 
 /** Section General Styles **/
 
+.section {
+  padding: 60px 0;
+}
+
 .section--after-hero h2 {
   margin: 0;
 }
@@ -296,21 +307,21 @@ img {
 /** Specials Section **/
 
 .specials {
-  margin: 60px 0;
+  /* margin: 60px 0; */
 }
 
 .specials .container {
   flex-direction: column;
 }
 
-.specials__title-text {
+.section__title-text {
   margin-bottom: 16px;
 }
 
 @media (min-width: 768px) {
-  .specials__title-text {
+  .section__title-text {
     font-size: 4em;
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; */
   }
 }
 
@@ -323,6 +334,9 @@ img {
 .specials .section__article-image {
   height: 185px;
   background: var(--secondary-color-two);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .specials .section__article-details {
@@ -352,5 +366,183 @@ img {
 }
 
 .specials .section__article-footer {
+  font-weight: bold;
+}
+
+/** Reviews Section **/
+
+.reviews .container {
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .reviews .container {
+    flex-direction: row;
+  }
+}
+
+.reviews .section__header {
+  max-width: 300px;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .reviews .section__header {
+    padding-right: 20px;
+  }
+}
+
+.reviews .section__articles {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 768px) {
+  .reviews .section__articles {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.reviews .section__article {
+  position: relative;
+  border-radius: 16px;
+  background: #fff;
+  padding: 28px 34px 24px 34px;
+}
+
+.reviews .section__article-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.reviews .section__article-title {
+  margin: 0;
+  padding: 0 5px;
+  font-size: 18px;
+}
+
+.star-rating {
+  padding: 0 0 0 5px;
+}
+
+.star-rating .fa-star,
+.star-rating .fa-star-half-alt {
+  color: var(--primary-color-two);
+}
+
+.reviews .review__image {
+  width: 85px;
+  height: 85px;
+  background-position: top center;
+  border-radius: 50%;
+  background-size: 189%;
+  background-repeat: no-repeat;
+  margin-top: -35px;
+  margin-left: -10px;
+}
+
+/** History Section **/
+
+.history-container {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .history-container {
+    flex-direction: row;
+    gap: 50px;
+  }
+}
+@media (min-width: 768px) {
+  .history__image {
+    width: 48%;
+  }
+}
+/* .history-text {
+  flex: 1 0 50%;
+} */
+
+@media (min-width: 768px) {
+  .history-text {
+    width: 50%;
+  }
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .footer__container {
+    flex-direction: row;
+  }
+}
+
+.footer__heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 1.5em;
+}
+
+/* .footer__container .footer__column:first-of-type {
+  margin-right: 20px;
+  flex: 1 1 30%;
+} */
+
+.footer__right {
+  flex: 1 1 100%;
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+@media (min-width: 768px) {
+  .footer__right {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    flex: 1 1 50%;
+    justify-content: right;
+  }
+}
+
+.footer__column {
+  flex: 1 1 40%;
+  line-height: 1.3em;
+  margin-bottom: 1em;
+}
+
+/* .footer__right .footer__column {
+  flex: 0 1 25%;
+
+  padding-right: 20px;
+} */
+
+.footer__column,
+.footer__column p {
+  font-size: 14px;
+}
+
+.footer__logo {
+  max-width: 250px;
+}
+
+.footer ul {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__social {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   font-weight: bold;
 }
