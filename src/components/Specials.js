@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "./Card";
+import { Link } from "react-router-dom";
 
 const specials = [
   {
@@ -33,9 +34,9 @@ const Specials = () => {
             </h2>
           </div>
           <div className="section__action">
-            <a className="btn btn--primary" href="#menu">
+            <Link className="btn btn--primary" to="/menu">
               Online Menu
-            </a>
+            </Link>
           </div>
         </div>
         <div className="section__articles">

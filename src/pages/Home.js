@@ -7,7 +7,7 @@ import History from "../components/History";
 const Home = () => {
   return (
     <main>
-      <Hero />
+      <Hero cta={"Reserve a Table"} />
       <Specials />
       <CustomersSay />
       <History />

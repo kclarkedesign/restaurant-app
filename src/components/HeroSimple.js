@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const Hero = ({
   title = "Little Lemon",
@@ -11,12 +10,6 @@ const Hero = ({
   imageClass = "hero__image home__image",
   bgClass = "bg--primary",
 }) => {
-  const ctaButton = showBtn ? (
-    <Link className="hero__cta btn btn--primary" to={ctaURL}>
-      {cta}
-    </Link>
-  ) : null;
-
   return (
     <section className={`hero hero--text-left ${bgClass}`} id="home">
       <div className="container">
@@ -25,7 +18,6 @@ const Hero = ({
             <h1 className="hero__title display-title">{title}</h1>
             <p className="hero__subtitle display-subtitle">{subtitle}</p>
             <p className="hero__lead lead-text">{lead}</p>
-            {ctaButton}
           </div>
           <div className={imageClass}></div>
         </div>
