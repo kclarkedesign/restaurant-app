@@ -1,4 +1,4 @@
-import React, { useReducer, useEffect } from "react";
+import React, { useReducer } from "react";
 import BookingForm from "../components/BookingForm";
 import Hero from "../components/Hero";
 import Review from "../components/Review";
@@ -65,7 +65,7 @@ const BookingPage = () => {
 
   const submitForm = (formData) => {
     if (submitAPI(formData)) {
-      navigate("/reservations/confirmation");
+      navigate("/reservations/confirmation", { state: { formData } });
     }
   };
 

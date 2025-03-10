@@ -25,16 +25,27 @@ const specials = [
 
 const Specials = () => {
   return (
-    <section className="specials section section--after-hero" id="menu">
+    <section
+      className="specials section section--after-hero"
+      id="menu"
+      aria-labelledby="specials-heading"
+    >
       <div className="container">
         <div className="section__header">
           <div className="section__title ">
-            <h2 className="section__title-text display-subtitle ">
+            <h2
+              className="section__title-text display-subtitle"
+              id="specials-heading"
+            >
               This weeks specials!
             </h2>
           </div>
           <div className="section__action">
-            <Link className="btn btn--primary" to="/menu">
+            <Link
+              className="btn btn--primary"
+              to="/menu"
+              aria-label="View the full online menu"
+            >
               Online Menu
             </Link>
           </div>

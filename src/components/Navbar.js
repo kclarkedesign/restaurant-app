@@ -1,27 +1,55 @@
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import "./Navbar.css";
 
-const Navbar = () => {
+const Navbar = ({ navLocation = "header" }) => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
+
+  const toggleMenu = () => {
+    setMenuOpen((prev) => !prev);
+  };
+
   return (
-    <nav className="header__nav">
-      <ul className="nav__list">
-        <li className="nav__list-item">
-          <Link to="/">Home</Link>
-        </li>
-        <li className="nav__list-item">
-          <Link to="/about">About</Link>
-        </li>
-        <li className="nav__list-item">
-          <Link to="/menu">Menu</Link>
-        </li>
-        <li className="nav__list-item">
-          <Link to="/reservations">Reservations</Link>
-        </li>
-        <li className="nav__list-item">
-          <Link to="/order">Order Online</Link>
-        </li>
-        <li className="nav__list-item">
-          <Link to="/login">Login</Link>
-        </li>
+    <nav
+      className={`${navLocation}__nav`}
+      role="navigation"
+      aria-label="Main navigation"
+      tabIndex="0"
+    >
+      {/* show hamburger for header nav only */}
+      {navLocation == "header" ? (
+        <button
+          className="nav__toggle"
+          onClick={toggleMenu}
+          aria-expanded={menuOpen}
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
+        >
+          ☰
+        </button>
+      ) : (
+        ""
+      )}
+
+      <ul className={`nav__list ${menuOpen ? "nav__list--open" : ""}`}>
+        {[
+          { to: "/", label: "Home" },
+          { to: "/about", label: "About" },
+          { to: "/menu", label: "Menu" },
+          { to: "/reservations", label: "Reservations" },
+          { to: "/order", label: "Order Online" },
+          { to: "/login", label: "Login" },
+        ].map(({ to, label }) => (
+          <li key={to} className="nav__list-item">
+            <Link
+              to={to}
+              aria-current={location.pathname === to ? "page" : undefined}
+              onClick={() => setMenuOpen(false)}
+            >
+              {label}
+            </Link>
+          </li>
+        ))}
       </ul>
     </nav>
   );

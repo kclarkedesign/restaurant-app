@@ -18,17 +18,24 @@ const reviews = [
 
 const CustomersSay = () => {
   return (
-    <section className="reviews section bg--secondary-dark" id="reviews">
+    <section
+      className="reviews section bg--secondary-dark"
+      id="reviews"
+      aria-labelledby="reviews-title"
+    >
       <div className="container">
         <div className="section__header">
           <div className="section__title">
-            <h2 className="section__title-text display-subtitle">
+            <h2
+              className="section__title-text display-subtitle"
+              id="reviews-title"
+            >
               What Customers Say
             </h2>
           </div>
         </div>
         <div className="section__articles">
-          {reviews.map((review, index) => (
+          {reviews.map((review) => (
             <Review key={review.name} {...review} />
           ))}
         </div>

@@ -4,12 +4,16 @@ import Navbar from "./Navbar";
 
 const Header = () => {
   return (
-    <header className="header">
+    <header className="header" role="banner" aria-label="Website header">
       <div className="header__container">
-        <Link to="/" className="header__link" href="#home">
-          <img className="header__logo" src="/Logo.svg" alt="" />
+        <Link to="/" className="header__link">
+          <img
+            className="header__logo"
+            src="/Logo.svg"
+            alt="Little Lemon Home"
+          />
         </Link>
-        <Navbar />
+        <Navbar navLocation={"header"} />
       </div>
     </header>
   );

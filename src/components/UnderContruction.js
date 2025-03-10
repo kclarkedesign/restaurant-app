@@ -3,7 +3,11 @@ import React from "react";
 
 const UnderConstruction = () => {
   return (
-    <section className="section">
+    <section
+      className="section"
+      aria-labelledby="hero-title"
+      aria-describedby="hero-lead"
+    >
       <div className="under-construction">
         <div
           className="container"
