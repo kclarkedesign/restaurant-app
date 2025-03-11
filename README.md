@@ -2,6 +2,9 @@
 
 ## Build a web app for the Little Lemon restaurant
 
+[Demo](https://kclarkedesign.github.io/restaurant-app/)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
