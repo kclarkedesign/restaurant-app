@@ -300,6 +300,11 @@ select {
 .section {
   padding: 60px 0;
 }
+@media (max-width: 767px) {
+  .section--after-hero {
+    padding-top: 80px;
+  }
+}
 
 .section--after-hero h2 {
   margin: 0;
@@ -310,7 +315,6 @@ select {
 
 @media (max-width: 768px) {
   .section--after-hero .section__header {
-    margin-top: 40px;
     margin-bottom: 60px;
   }
 }
