@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/restaurant-app/static/css/main.dd69e88b.css",
+    "main.js": "/restaurant-app/static/js/main.ad065278.js",
+    "static/js/453.6b81b7de.chunk.js": "/restaurant-app/static/js/453.6b81b7de.chunk.js",
+    "static/media/fa-solid-900.ttf": "/restaurant-app/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
+    "static/media/fa-brands-400.ttf": "/restaurant-app/static/media/fa-brands-400.1815e00441357e01619e.ttf",
+    "static/media/fa-solid-900.woff2": "/restaurant-app/static/media/fa-solid-900.2463b90d9a316e4e5294.woff2",
+    "static/media/img-restaurant.jpg": "/restaurant-app/static/media/img-restaurant.1daab2c8d183da6202bf.jpg",
+    "static/media/img-bruschetta.jpg": "/restaurant-app/static/media/img-bruschetta.cc4b0d691bebc4904502.jpg",
+    "static/media/fa-brands-400.woff2": "/restaurant-app/static/media/fa-brands-400.c210719e60948b211a12.woff2",
+    "static/media/img-greek-salad.jpg": "/restaurant-app/static/media/img-greek-salad.d4250a44519ab6fedc6f.jpg",
+    "static/media/fa-regular-400.ttf": "/restaurant-app/static/media/fa-regular-400.914997e1bdfc990d0897.ttf",
+    "static/media/img-hero-home.jpg": "/restaurant-app/static/media/img-hero-home.e65af88b4b18715e0fc8.jpg",
+    "static/media/img-person-1.jpg": "/restaurant-app/static/media/img-person-1.31e965aeabe891a2d786.jpg",
+    "static/media/fa-regular-400.woff2": "/restaurant-app/static/media/fa-regular-400.89999bdf5d835c012025.woff2",
+    "static/media/img-person-2.jpg": "/restaurant-app/static/media/img-person-2.d65659bb1249c130af60.jpg",
+    "static/media/fa-v4compatibility.ttf": "/restaurant-app/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
+    "static/media/fa-v4compatibility.woff2": "/restaurant-app/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
+    "index.html": "/restaurant-app/index.html",
+    "main.dd69e88b.css.map": "/restaurant-app/static/css/main.dd69e88b.css.map",
+    "main.ad065278.js.map": "/restaurant-app/static/js/main.ad065278.js.map",
+    "453.6b81b7de.chunk.js.map": "/restaurant-app/static/js/453.6b81b7de.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd69e88b.css",
+    "static/js/main.ad065278.js"
+  ]
+}
