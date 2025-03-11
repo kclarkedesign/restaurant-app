@@ -33,7 +33,6 @@ const ConfirmedBooking = () => {
             </div>
           </div>
           <h3 style={{ marginTop: "2em" }}>Booking Details</h3>
-          {console.log(formData)}
           {formData ? (
             <div className="details" aria-live="polite">
               <p className="p-text">

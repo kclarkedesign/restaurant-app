@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
+import { ReactComponent as Logo } from "../img/Logo.svg";
 
 const Footer = () => {
   return (
@@ -13,11 +14,7 @@ const Footer = () => {
         <div className="footer__column">
           <div className="footer__logo">
             <Link to="/" className="footer__link">
-              <img
-                className="footer__img"
-                src="/Logo.svg"
-                alt="Little Lemon Home"
-              />
+              <Logo className="footer__img" alt="Little Lemon Home" />
             </Link>
           </div>
         </div>
