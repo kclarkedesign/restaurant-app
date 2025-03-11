@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Front-End Developer Capstone
+
+## Build a web app for the Little Lemon restaurant
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
