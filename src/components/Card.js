@@ -1,6 +1,9 @@
 import React from "react";
 
 const Card = ({ imageSrc, title, price, text }) => {
+  // const deliveryImg = require("./img/img-person-1.jpg");
+  const deliveryImg = require("../img/img-delivery.png");
+
   return (
     <>
       <article
@@ -21,7 +24,10 @@ const Card = ({ imageSrc, title, price, text }) => {
           </div>
           <p className="section__article-text p-text">{text}</p>
           <div className="section__article-footer">
-            Order a deliver <span className="icon-delivery"></span>
+            Order a deliver{" "}
+            <span className="icon-delivery">
+              <img src={deliveryImg} alt="delivery scooter" />
+            </span>
           </div>
         </div>
       </article>

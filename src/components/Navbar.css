@@ -1,8 +1,9 @@
 /* Basic Navbar Styling */
 .header__nav {
   color: white;
-  padding: 10px;
+  padding: 10px 10px 10px;
   position: relative;
+  right: -10px;
 }
 
 /* Hide menu by default on mobile */
@@ -18,7 +19,7 @@
   flex-direction: column;
   position: absolute;
   top: 50px;
-  right: -20px;
+  right: -10px;
   background: #fff;
   padding: 20px 25px 25px;
   z-index: 999;
