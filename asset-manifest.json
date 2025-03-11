@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/restaurant-app/static/css/main.a8e62d10.css",
+    "main.css": "/restaurant-app/static/css/main.d31cb33c.css",
     "main.js": "/restaurant-app/static/js/main.71c3b080.js",
     "static/js/453.6b81b7de.chunk.js": "/restaurant-app/static/js/453.6b81b7de.chunk.js",
     "static/media/fa-solid-900.ttf": "/restaurant-app/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
@@ -19,12 +19,12 @@
     "static/media/fa-v4compatibility.ttf": "/restaurant-app/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
     "static/media/fa-v4compatibility.woff2": "/restaurant-app/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/restaurant-app/index.html",
-    "main.a8e62d10.css.map": "/restaurant-app/static/css/main.a8e62d10.css.map",
+    "main.d31cb33c.css.map": "/restaurant-app/static/css/main.d31cb33c.css.map",
     "main.71c3b080.js.map": "/restaurant-app/static/js/main.71c3b080.js.map",
     "453.6b81b7de.chunk.js.map": "/restaurant-app/static/js/453.6b81b7de.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a8e62d10.css",
+    "static/css/main.d31cb33c.css",
     "static/js/main.71c3b080.js"
   ]
 }
